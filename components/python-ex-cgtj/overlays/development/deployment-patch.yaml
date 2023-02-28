@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: python-ex-cgtj
+  namespace: mdsaud-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/uidev-user-workload@sha256:157f4e30da6b574cf6f6d2e231fede70881e58e92deb15b1fbf995d92afdbbc6
+        name: my-python
+        resources: {}
+status: {}
