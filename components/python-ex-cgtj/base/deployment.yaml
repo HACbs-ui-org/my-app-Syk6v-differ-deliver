@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: python-ex-cgtj
     spec:
       containers:
-      - image: quay.io/stonesoupuicluster/uidev-user-workload:Syk6v-python-ex-cgtj
+      - image: quay.io/stonesoupuicluster/uidev-user-workload@sha256:157f4e30da6b574cf6f6d2e231fede70881e58e92deb15b1fbf995d92afdbbc6
         name: my-python
         ports:
         - containerPort: 8081
